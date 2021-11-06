@@ -1,0 +1,77 @@
+.hero {
+    background: var(--hero-background-color);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-titele-color);
+    max-width: 696px;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+.hero__btn {
+    color: var(--primary-titele-color);
+    font-weight: 700;
+    padding: 16px 32px;
+    border: 0;
+    border-radius: 4px;
+}
+
+
+/* ХАРАКТЕРИСТИКИ */
+
+.specifications {
+    padding-bottom: 47px;
+}
+
+.specifications__title {
+    visibility: hidden;
+}
+
+.specifications__list {
+    display: flex;
+}
+
+.specifications__item {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.box__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "";
+    height: 120px;
+    background: var(--btn-portfolio-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.specifications-item__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-titele-color);
+    margin-bottom: 10px;
+}
+
+.specifications__paragraph {
+    font-size: 14px;
+    line-height: 1.71;
+}

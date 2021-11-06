@@ -1,0 +1,14 @@
+.btn {
+    color: var(--secondary-titele-color);
+    cursor: pointer;
+    background-color: var(--accent-color);
+    font-family: "Roboto";
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #188CE8;
+        color: var(--secondary-titele-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}

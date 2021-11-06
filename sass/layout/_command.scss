@@ -1,0 +1,44 @@
+.command {
+    background-color: var(--btn-portfolio-color);
+    text-align: center;
+}
+
+.command__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.command__item {
+    background-color: var(--primary-titele-color);
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 120px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.command__title {
+    font-size: 36px;
+    line-height: 1.16;
+    color: var(--secondary-titele-color);
+    margin-bottom: 50px;
+}
+
+.command__foto {
+    margin-bottom: 30px;
+}
+
+.command__name {
+    font-weight: 500;
+    line-height: 1.18;
+    color: var(--secondary-titele-color);
+    margin-bottom: 10px;
+}
+
+.command__profession {
+    line-height: 1.18;
+    margin-bottom: 16px;
+}
