@@ -1,0 +1,42 @@
+.specifications {
+    // padding-bottom: 47px;
+    padding-bottom: 30px;
+}
+
+.specifications__title {
+    visibility: hidden;
+}
+
+.specifications__list {
+    display: flex;
+}
+
+.specifications__item {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.box__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "";
+    height: 120px;
+    background: var(--btn-portfolio-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.specifications-item__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-titele-color);
+    margin-bottom: 10px;
+}
+
+.specifications__paragraph {
+    font-size: 14px;
+    line-height: 1.71;
+}
