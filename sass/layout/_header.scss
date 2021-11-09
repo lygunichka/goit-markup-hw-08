@@ -2,14 +2,21 @@
     border-bottom: 1px solid var(--border-color);
 }
 
-.header__container {
+.header__menu {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 767px) {
+        position: relative;
+        margin: 0;
+        padding-left: 15px;
+    }
 }
 
 .header__nav {
     display: flex;
-    align-items: center;
+    // @media screen and (max-width: 767px) {
+    //     position: absolute;
+    // }
 }
 
 .nav__logo-web {
@@ -39,7 +46,10 @@
 
 .nav__list {
     display: flex;
-    align-items: center;
+    // align-items: center;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 .nav__item {
@@ -52,6 +62,26 @@
     display: flex;
     margin-left: auto;
     align-items: center;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: block;
+        margin-left: 80px;
+    }
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.contact__link {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 10px;
+        margin: 0;
+        padding-bottom: 0;
+        letter-spacing: 0.02em;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.16;
+    }
 }
 
 .nav__link {
@@ -81,6 +111,11 @@
 .contact__item {
     &:not(:last-child) {
         margin-right: 50px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        &:not(:last-child) {
+            margin: 0;
+        }
     }
 }
 
@@ -116,5 +151,137 @@
         background-color: var(--accent-color);
         border-radius: 2px;
         bottom: -1px;
+    }
+}
+
+.menu-open__btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    margin-left: auto;
+    cursor: pointer;
+    color: #212121;
+    background-color: transparent;
+}
+
+.menu-btn--open {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-mob {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-titele-color);
+    padding: 48px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 999;
+    text-align: start;
+}
+.current-mob {
+    color: var(--accent-color);
+}
+
+.menu-mob__item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    .menu-mob__link {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        color: var(--secondary-titele-color);
+    }
+    .current-mob {
+        color: var(--accent-color);
+    }
+}
+
+.menu-mob__tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+.menu-mob__contacts {
+    margin-bottom: 48px;
+    .menu-mob__mail {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: var(--primary-text-color);
+    }
+}
+
+.mob-social__item {
+    margin-top: 32px;
+    margin-left: 10px;
+    &:not(:last-child) {
+        text-align: start;
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    .mob-social__link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+        display: flex;
+    }
+}
+
+.menu-mob__social {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -32px;
+    margin-left: -10px;
+}
+
+.menu-close__btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    margin-left: auto;
+    cursor: pointer;
+    color: var(--secondary-titele-color);
+    background-color: transparent;
+}
+
+.menu-btn--close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.close-mob__icon {
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
     }
 }
