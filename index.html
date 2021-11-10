@@ -19,6 +19,11 @@
 <body>
     <header class="header">
         <div class="header__menu container">
+            <button type="button" class="menu-open__btn menu-btn--open" aria-expanded="false">
+                <svg class="menu-mob__icon" width="24" height="16">
+                    <use href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
             <nav class="header__nav">
                 <a class="nav__logo link" href="/"><span class="nav__logo-web">Web</span>Studio</a>
                 <ul class="nav__list list">
@@ -42,7 +47,7 @@
                     </a>
                 </li>
                 <li class="contact__item">
-                    <a class="contact__link link" href="tel:+380961111111">
+                    <a class="contact__link header-tel link" href="tel:+380961111111">
                         <svg class="contact__icon" width="10px" height="16px">
                             <use href="./images/sprite.svg#icon-header-tel"></use>
                         </svg> +38 096 111 11 11
@@ -50,12 +55,8 @@
                 </li>
             </ul>
         </div>
-        <button type="button" class="menu-open__btn menu-btn--open" aria-expanded="false">
-            <svg class="menu-mob__icon" width="24" height="16">
-                <use href="./images/sprite.svg#icon-menu"></use>
-            </svg>
-        </button>
-        <div class="backdrop is-hidden">
+        
+        <div class="backdrop backdrop__menu is-hidden">
             <div class="menu-mob">
                 <div class="menu-mob__content">
 
@@ -410,8 +411,7 @@
                         <ul class="contacst__list list">
                             <li class="contacst__item">
                                 <a class="contacst__link maps link" href="https://goo.gl/maps/6fz5dBCTQSaGrnJb6 ">г.
-                                    Киев, пр-т Леси
-                                    Украинки, 26</a>
+                                    Киев, пр-т Леси Украинки, 26</a>
                             </li>
                             <li class="contacst__item">
                                 <a class="contacst__link link" href="mailto:info@example.com ">info@example.com</a>

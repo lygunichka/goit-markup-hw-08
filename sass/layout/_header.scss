@@ -7,16 +7,26 @@
     align-items: center;
     @media screen and (max-width: 767px) {
         position: relative;
-        margin: 0;
-        padding-left: 15px;
+        margin: 0 auto;
+        padding-left: 0 15px;
     }
 }
 
 .header__nav {
     display: flex;
-    // @media screen and (max-width: 767px) {
-    //     position: absolute;
-    // }
+    
+
+.header-mail {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 10px;
+    padding-top: 21px;
+    }
+}
+
+.header-tel {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-bottom: 21px;
+    }
 }
 
 .nav__logo-web {
@@ -33,9 +43,15 @@
     font-size: 26px;
     line-height: 1.19;
     color: var(--secondary-titele-color);
-    margin-right: 92px;
+    // margin-right: 92px;
     padding-top: 25px;
     padding-bottom: 24px;
+    @media screen and (min-width: 769px) {
+        margin-right: 88px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 92px;
+    }
 }
 
 .nav__link,
@@ -49,6 +65,12 @@
     // align-items: center;
     @media screen and (max-width: 768px) {
         display: none;
+    }
+    @media screen and (min-width: 769px)  {
+        margin-right: 80px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 275px;
     }
 }
 
@@ -64,16 +86,17 @@
     align-items: center;
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: block;
-        margin-left: 80px;
     }
     @media screen and (max-width: 768px) {
         display: none;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
     }
 }
 
 .contact__link {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        padding-top: 10px;
         margin: 0;
         padding-bottom: 0;
         letter-spacing: 0.02em;
@@ -179,6 +202,12 @@
     }
 }
 
+.backdrop__menu {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
 .menu-mob {
     position: fixed;
     left: 0;
@@ -192,6 +221,7 @@
     flex-direction: column;
     z-index: 999;
     text-align: start;
+    
 }
 .current-mob {
     color: var(--accent-color);

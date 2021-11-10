@@ -17,38 +17,93 @@
 <body>
   <header class="header">
     <div class="header__menu container">
-      <nav class="header__nav">
-          <a class="nav__logo link" href="/"><span class="nav__logo-web">Web</span>Studio</a>
-          <ul class="nav__list list">
-              <li class="nav__item">
-                  <a class="nav__link link" href="./index.html">Студия</a>
-              </li>
-              <li class="nav__item">
-                  <a class="nav__link link current" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="nav__item">
-                  <a class="nav__link link" href="#">Контакты</a>
-              </li>
-          </ul>
-      </nav>
-      <ul class="contact__list list">
-          <li class="contact__item">
-              <a class="contact__link header-mail link" href="mailto:info@devstudio.com">
-                  <svg class="contact__icon" width="16px" height="12px">
-                      <use href="./images/sprite.svg#icon-header-mail"></use>
-                  </svg> info@devstudio.com
-              </a>
-          </li>
-          <li class="contact__item">
-              <a class="contact__link link" href="tel:+380961111111">
-                  <svg class="contact__icon" width="10px" height="16px">
-                      <use href="./images/sprite.svg#icon-header-tel"></use>
-                  </svg> +38 096 111 11 11
-              </a>
-          </li>
-      </ul>
-  </div>
-  </header>
+        <button type="button" class="menu-open__btn menu-btn--open" aria-expanded="false">
+            <svg class="menu-mob__icon" width="24" height="16">
+                <use href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+        </button>
+        <nav class="header__nav">
+            <a class="nav__logo link" href="/"><span class="nav__logo-web">Web</span>Studio</a>
+            <ul class="nav__list list">
+                <li class="nav__item">
+                    <a class="nav__link link " href="./index.html">Студия</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link link current" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="contact__list list">
+            <li class="contact__item">
+                <a class="contact__link header-mail link" href="mailto:info@devstudio.com">
+                    <svg class="contact__icon" width="16px" height="12px">
+                        <use href="./images/sprite.svg#icon-header-mail"></use>
+                    </svg> info@devstudio.com
+                </a>
+            </li>
+            <li class="contact__item">
+                <a class="contact__link header-tel link" href="tel:+380961111111">
+                    <svg class="contact__icon" width="10px" height="16px">
+                        <use href="./images/sprite.svg#icon-header-tel"></use>
+                    </svg> +38 096 111 11 11
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="backdrop backdrop__menu is-hidden">
+        <div class="menu-mob">
+            <div class="menu-mob__content">
+
+                <ul class="menu-mob__list list">
+                    <li class="menu-mob__item">
+                        <a href="./index.html" class="menu-mob__link link current-mob">Студия</a>
+                    </li>
+                    <li class="menu-mob__item">
+                        <a href="./portfolio.html" class="menu-mob__link link">Портфолио</a>
+                    </li>
+                    <li class="menu-mob__item">
+                        <a href="" class="menu-mob__link link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-mob__content ">
+                <ul class="menu-mob__contacts list">
+                    <li class="menu-mob__item">
+                        <a href="" class="menu-mob__tel link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="menu-mob__item">
+                        <a href="" class="menu-mob__mail link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="menu-mob__social list">
+                    <li class="mob-social__item">
+                        <a href="https://www.instagram.com/?hl=ru" class="mob-social__link link">Instagram</a>
+                    </li>
+                    <li class="mob-social__item">
+                        <a href="https://twitter.com/?lang=ru" class="mob-social__link link">Twitter</a>
+                    </li>
+                    <li class="mob-social__item">
+                        <a href="https://www.facebook.com/" class="mob-social__link link">Facebook</a>
+                    </li>
+                    <li class="mob-social__item">
+                        <a href="https://ru.linkedin.com/" class="mob-social__link link">Linkedin</a>
+                    </li>
+                </ul>
+                <button type="button" class="menu-close__btn menu-btn--close" aria-expanded="false">
+                    <svg class="close-mob__icon" width="19" height="19">
+                        <use href="./images/sprite.svg#icon-close-mob"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</header>
 
   <main>
     <section class="hero-portfolio">
@@ -196,8 +251,7 @@
                     <ul class="contacst__list list">
                         <li class="contacst__item">
                             <a class="contacst__link maps link" href="https://goo.gl/maps/6fz5dBCTQSaGrnJb6 ">г.
-                                Киев, пр-т Леси
-                                Украинки, 26</a>
+                                Киев, пр-т Леси Украинки, 26</a>
                         </li>
                         <li class="contacst__item">
                             <a class="contacst__link link" href="mailto:info@example.com ">info@example.com</a>

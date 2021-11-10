@@ -66,13 +66,13 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 708px;
+    width: 768px;
   }
 }
 
@@ -101,6 +101,13 @@ section {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .header {
   border-bottom: 1px solid var(--border-color);
 }
@@ -113,13 +120,26 @@ section {
 @media screen and (max-width: 767px) {
   .header__menu {
     position: relative;
-    margin: 0;
-    padding-left: 15px;
+    margin: 0 auto;
+    padding-left: 0 15px;
   }
 }
 
 .header__nav {
   display: flex;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-mail {
+    margin-bottom: 10px;
+    padding-top: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-tel {
+    padding-bottom: 21px;
+  }
 }
 
 .nav__logo-web {
@@ -136,9 +156,20 @@ section {
   font-size: 26px;
   line-height: 1.19;
   color: var(--secondary-titele-color);
-  margin-right: 92px;
   padding-top: 25px;
   padding-bottom: 24px;
+}
+
+@media screen and (min-width: 769px) {
+  .nav__logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__logo {
+    margin-right: 92px;
+  }
 }
 
 .nav__link,
@@ -157,6 +188,18 @@ section {
   }
 }
 
+@media screen and (min-width: 769px) {
+  .nav__list {
+    margin-right: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    margin-right: 275px;
+  }
+}
+
 .nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -170,7 +213,6 @@ section {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact__list {
     display: block;
-    margin-left: 80px;
   }
 }
 
@@ -180,9 +222,14 @@ section {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contact__list {
+    margin-left: 0;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact__link {
-    padding-top: 10px;
     margin: 0;
     padding-bottom: 0;
     letter-spacing: 0.02em;
@@ -219,12 +266,6 @@ section {
 
 .contact__item:not(:last-child) {
   margin-right: 50px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contact__item:not(:last-child) {
-    margin: 0;
-  }
 }
 
 .contact__link {
@@ -288,6 +329,12 @@ section {
 
 @media screen and (min-width: 768px) {
   .menu-btn--open {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop__menu {
     display: none;
   }
 }
@@ -406,6 +453,7 @@ section {
   padding-top: 118px;
   padding-bottom: 118px;
   background-position: center;
+  max-width: 1600px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -432,6 +480,7 @@ section {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-desktop-img1x.jpg);
@@ -530,10 +579,6 @@ section {
 .specifications__paragraph {
   font-size: 14px;
   line-height: 1.71;
-}
-
-.work {
-  padding-top: 47px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -812,6 +857,12 @@ section {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-right: 106.5px;
+  }
+}
+
 .footer__container {
   display: block;
   align-items: baseline;
@@ -830,7 +881,6 @@ section {
   .footer__container {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
   }
 }
 
@@ -840,6 +890,12 @@ section {
   }
   .footer__contacst:not(:last-child) {
     margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__contacst {
+    margin-right: 70px;
   }
 }
 
@@ -867,6 +923,10 @@ section {
   fill: var(--primary-titele-color);
 }
 
+.footer-form {
+  width: 100%;
+}
+
 @media screen and (max-width: 1199px) {
   .footer-form {
     display: block;
@@ -880,8 +940,21 @@ section {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form {
+    width: 450px;
+  }
+}
+
 .footer-form__sing {
-  width: 450px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -889,19 +962,21 @@ section {
   text-align: center;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form__sing {
-    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__sing {
     flex-wrap: nowrap;
-    align-items: center;
-    text-align: center;
-    margin-top: 0;
-    width: 358px;
+    justify-content: flex-start;
   }
 }
 
 .footer__input {
-  width: 450px;
+  width: 100vw;
   height: 50px;
   padding: 15px;
   color: var(--primary-titele-color);
@@ -917,10 +992,28 @@ section {
   border-color: var(--accent-color);
 }
 
+@media screen and (min-width: 450px) {
+  .footer__input {
+    width: 450px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer__input {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__input {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__input {
     width: 358px;
+    margin: 0;
   }
 }
 
@@ -975,6 +1068,12 @@ section {
   margin-right: 8px;
 }
 
+@media screen and (max-width: 769px) {
+  .btn__item:nth-child(-n + 3) {
+    margin-bottom: 10px;
+  }
+}
+
 .btn__menu--all {
   color: var(--primary-titele-color);
   background-color: var(--accent-color);
@@ -982,8 +1081,16 @@ section {
 
 .btn__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 769px) {
+  .btn__list {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }
 
 .card__list {
@@ -1025,6 +1132,14 @@ section {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .card__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
 .card__text {
   position: relative;
   overflow: hidden;
@@ -1056,6 +1171,7 @@ section {
 }
 
 .card__content {
+  flex-grow: 1;
   border: 1px solid var(--border-color);
   border-top: 0;
   padding-right: 24px;
