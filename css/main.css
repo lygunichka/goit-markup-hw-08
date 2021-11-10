@@ -129,19 +129,6 @@ section {
   display: flex;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header-mail {
-    margin-bottom: 10px;
-    padding-top: 21px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header-tel {
-    padding-bottom: 21px;
-  }
-}
-
 .nav__logo-web {
   color: var(--accent-color);
   font-family: Raleway;
@@ -172,14 +159,28 @@ section {
   }
 }
 
-.nav__link,
-.contact__link {
-  padding-top: 32px;
+.nav__link {
   padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__link {
+    padding-top: 32px;
+  }
+}
+
+.header-mail {
+  padding-top: 21px;
+  margin-bottom: 10px;
+}
+
+.header-tel {
+  padding-bottom: 21px;
 }
 
 .nav__list {
   display: flex;
+  align-items: flex-end;
 }
 
 @media screen and (max-width: 768px) {
